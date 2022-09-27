@@ -1,0 +1,209 @@
+:root {
+  --primary: #ffffff;
+  --secondary: #ddcba3;
+  --text-color: #fff;
+  --text-secondary: rgb(71, 70, 70);
+  --text-tertiary: #5f5b5b;
+}
+
+* {
+  font-family: "IM+Fell+English+SC";
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  font-family: "IM+Fell+English+SC";
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  position: fixed;
+}
+
+li {
+  list-style: none;
+  margin: 10px;
+  display: inline;
+}
+
+li a {
+  padding: 5px 10px;
+  margin: 0;
+  border: 3px solid #000;
+  background: #ddcba3;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  }
+
+li a:hover {
+  background: #CCC;
+  color: #000;
+  border-color: #000;
+}
+
+#grishaverse-description {
+  background: linear-gradient(rgba(0, 0, 0, 4), rgba(0, 0, 0, 0.3)),
+    url("../img/ravka.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 65vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: var(--text-color);
+}
+
+#disclaimer .about-grishaverse {
+  font-size: 2em;
+  text-transform: uppercase;
+  max-width: 450px;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+#grisha-informations h2 {
+  background-color: var(--secondary);
+  text-align: center;
+  font-size: 3em;
+  padding: 2em;
+  font-weight: 700;
+  font-size: 2em;
+}
+
+.informations {
+  display: block;
+  justify-content: space-around;
+  padding: 4em;
+  margin: 0 auto;
+}
+
+.information {
+  display: block;
+  align-items: center;
+  max-width: 100%;
+  color: var(--text-tertiary);
+}
+
+#orders {
+  background-color: var(--secondary);
+  text-align: center;
+  padding: 4em;
+  font-weight: 800;
+}
+
+.order {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 5%;
+  margin-bottom: 4em;
+}
+
+.order h3 {
+  margin-bottom: 1em;
+  font-size: 2em;
+  font-weight: 500;
+}
+
+#order-1 h3 {
+  font-size: 3em;
+  font-weight: 700;
+}
+
+.order-description {
+  width: 100%;
+  padding-left: 2em;
+}
+
+#order-3 .order-description {
+  justify-self: flex-start;
+}
+
+#more {
+  height: 180px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: var(--text-secondary);
+}
+
+#more h3 {
+  margin-bottom: 1em;
+  font-size: 2em;
+  font-weight: 500;
+}
+
+#footer {
+  text-align: center;
+  color: var(--text-color);
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ddcba3;
+}
+
+
+@media (max-width: 450px) {
+  .informations {
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    padding: 4em;
+  }
+
+  .ul {
+    flex-direction: column-reverse;
+    position: fixed;
+    margin-bottom: 1em;
+    gap: 0;
+  }
+
+  .information {
+    max-width: 80%;
+    margin-bottom: 2em;
+  }
+
+
+  .order {
+    flex-direction: column;
+    margin-bottom: 0.5em;
+    gap: 0;
+  }
+
+  .order img {
+    width: 80%;
+    margin: 2em 0;
+  }
+
+  #order-1 img {
+    display: none;
+  }
+
+  .order-description {
+    padding: 0;
+  }
+
+  #order-3 img {
+    order: 2;
+  }
+
+  #order-3 .detail-description {
+    order: 1;
+
+  }
+
+  #more {
+    flex-direction: column;
+    margin-bottom: 0.5em;
+    gap: 0;
+  }
+
+  #more .btn {
+    width: 60%;
+  }
+}
